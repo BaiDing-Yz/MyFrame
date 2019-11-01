@@ -4,6 +4,7 @@
 Frame
 │   train.py （训练程序）
 │   test.py  （测试程序）    
+|   model_visual  (模型测试文件)
 └───base
 │   │   __init__.py
 │   │   base_config.py         #配置文件的父类
