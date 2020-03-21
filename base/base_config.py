@@ -81,10 +81,16 @@ class BaseConfig(object):
         self.TEST_OUTPUT_PATH = '../data/SeedCup2019_pre/test' + '_V' + self.RESUME_VERSION + '_' + str(self.time) + '.txt'
 
     def list_all_member(self):
+        '''
+        print所有的参数
+        '''
         for name,value in vars(self).items():
             print('%s=%s'%(name,value))
             
     def write_to_txt(self,file):
+        """
+        将参数输出到file文件中
+        """
         for name,value in vars(self).items():
             string = '{}={}\n'.format(name,value)
             file.write(string)
